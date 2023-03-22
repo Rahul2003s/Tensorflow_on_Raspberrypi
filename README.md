@@ -46,5 +46,17 @@ sudo apt-get install -y libhdf5-dev libc-ares-dev libeigen3-dev gcc gfortran lib
     wget [RAW file url]
     ```
     
+    - then change that file permission to executable file
+    ```bash
+    chmod +x download_tensorflow-2.9.0-cp39-none-linux_aarch64.sh
+    ```
+    
+    - Run that file to download the wheel file for tensorflow
+    ```bash
+    ./download_tensorflow-2.9.0-cp39-none-linux_aarch64.sh
+    ```
+    
+    - 
+    
    
    
