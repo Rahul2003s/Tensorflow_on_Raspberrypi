@@ -41,22 +41,40 @@ sudo apt-get install -y libhdf5-dev libc-ares-dev libeigen3-dev gcc gfortran lib
    
    __Note__ :if your python version is not there then you need to change your python version you can reffer this [link](https://github.com/pyenv/pyenv) to change python versions
     
-    - download the wheel file 
-    ```bash
+  5. download the wheel file
+  ```bash
     wget [RAW file url]
-    ```
+  ```
     
-    - then change that file permission to executable file
-    ```bash
-    chmod +x download_tensorflow-2.9.0-cp39-none-linux_aarch64.sh
-    ```
+  6. then change that file permission to executable file
+  ```bash
+  chmod +x download_tensorflow-2.9.0-cp39-none-linux_aarch64.sh
+  ```
     
-    - Run that file to download the wheel file for tensorflow
-    ```bash
-    ./download_tensorflow-2.9.0-cp39-none-linux_aarch64.sh
-    ```
+  7. Run that file to download the wheel file for tensorflow
+  ```bash
+  ./download_tensorflow-2.9.0-cp39-none-linux_aarch64.sh
+  ```
+  this will download the correct tensorflow python whell
     
-    - 
+  8. Now uninstall tensorflow if you have installed 
+  ```bash
+  sudo pip uninstall tensorflow
+  
+  pip uninstall tensorflow
+  ```
     
+  7. Install the Tensorflow wheel file
+  ```bash
+  python3 -m pip install tensorflow-2.9.0-cp39-none-linux_aarch64.whl
+  ```
+  
+  8. Check tensorflow installed
+  ```bash
+  python3
+  >
+  >import tensorflow as tf
+  >
+  ```
    
    
